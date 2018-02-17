@@ -20,8 +20,8 @@ const GradientSlider = ({
         value={value}
         step={step}
         animateTransitions
-        animationType="spring"
-        thumbTouchSize={{ width: 48, height: 48 }}
+        animationType="timing"
+        thumbTouchSize={{ width: 40, height: 40 }}
         maximumValue={maximumValue}
         onValueChange={onValueChange}
         minimumTrackTintColor="transparent"
@@ -42,19 +42,19 @@ const styles = StyleSheet.create({
     height: 32
   },
   thumb: {
-    width: 24,
-    height: 24,
-    borderRadius: 24 / 2,
+    width: 20,
+    height: 20,
+    borderRadius: 20 / 2,
     shadowColor: 'black',
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 4,
-    shadowOpacity: 0.1
+    shadowOpacity: 0.2
   },
   gradient: {
     position: 'absolute',
     left: 0,
     right: 0,
-    height: 6,
+    height: 3,
   },
 });
 
